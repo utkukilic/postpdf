@@ -1,0 +1,535 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "An overview on smart contracts: Challenges, advances and platforms",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 39,
+            "page_index": 0,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                628.8359985351562,
+                0.0
+            ]
+        },
+        {
+            "title": "Introduction",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                380.2569885253906,
+                0.0
+            ]
+        },
+        {
+            "title": "Overview of blockchain and smart contract",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 2,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                345.1869812011719,
+                0.0
+            ]
+        },
+        {
+            "title": "Blockchain",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 2,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                270.7170104980469,
+                0.0
+            ]
+        },
+        {
+            "title": "Smart contract",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 2,
+            "view_mode": "XYZ",
+            "view_pos": [
+                311.50799560546875,
+                499.89599609375,
+                0.0
+            ]
+        },
+        {
+            "title": "Challenges and advances of smart contract",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 13,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                480.03900146484375,
+                0.0
+            ]
+        },
+        {
+            "title": "Creation challenges",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                387.56298828125,
+                0.0
+            ]
+        },
+        {
+            "title": "Readability",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                286.1199951171875,
+                0.0
+            ]
+        },
+        {
+            "title": "Functional issues",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                311.50799560546875,
+                207.15501403808594,
+                0.0
+            ]
+        },
+        {
+            "title": "Deployment challenges",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                32.711997985839844,
+                299.3399963378906,
+                0.0
+            ]
+        },
+        {
+            "title": "Contract correctness",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                32.711997985839844,
+                188.7550048828125,
+                0.0
+            ]
+        },
+        {
+            "title": "Dynamic control flow",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                741.9630126953125,
+                0.0
+            ]
+        },
+        {
+            "title": "Execution challenges",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                221.1320037841797,
+                0.0
+            ]
+        },
+        {
+            "title": "Trustworthy oracle",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                147.8070068359375,
+                0.0
+            ]
+        },
+        {
+            "title": "Transaction-ordering dependence",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                311.50799560546875,
+                503.447998046875,
+                0.0
+            ]
+        },
+        {
+            "title": "Execution efficiency",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                311.50799560546875,
+                209.36199951171875,
+                0.0
+            ]
+        },
+        {
+            "title": "Completion challenges",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                32.711997985839844,
+                433.6780090332031,
+                0.0
+            ]
+        },
+        {
+            "title": "Privacy and security",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                32.711997985839844,
+                358.3819885253906,
+                0.0
+            ]
+        },
+        {
+            "title": "Scams",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                301.70001220703125,
+                372.7690124511719,
+                0.0
+            ]
+        },
+        {
+            "title": "Smart contract development platforms",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 9,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                636.4140625,
+                0.0
+            ]
+        },
+        {
+            "title": "Representative platforms",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 6,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                486.4939880371094,
+                0.0
+            ]
+        },
+        {
+            "title": "Ethereum",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                465.1820068359375,
+                0.0
+            ]
+        },
+        {
+            "title": "Hyperledger fabric",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                171.4219970703125,
+                0.0
+            ]
+        },
+        {
+            "title": "Corda",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                311.50799560546875,
+                518.926025390625,
+                0.0
+            ]
+        },
+        {
+            "title": "Stellar",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                311.50799560546875,
+                319.7860107421875,
+                0.0
+            ]
+        },
+        {
+            "title": "Rootstock",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                311.50799560546875,
+                129.57501220703125,
+                0.0
+            ]
+        },
+        {
+            "title": "EOS",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                32.711997985839844,
+                417.22698974609375,
+                0.0
+            ]
+        },
+        {
+            "title": "Comparison of smart contract platforms",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                32.711997985839844,
+                243.239990234375,
+                0.0
+            ]
+        },
+        {
+            "title": "Example of developing a smart contract",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                395.843994140625,
+                0.0
+            ]
+        },
+        {
+            "title": "Applications of smart contract",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 6,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                110.93800354003906,
+                0.0
+            ]
+        },
+        {
+            "title": "Internet of things",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                311.50799560546875,
+                593.614990234375,
+                0.0
+            ]
+        },
+        {
+            "title": "Distributed system security",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                311.50799560546875,
+                216.6439971923828,
+                0.0
+            ]
+        },
+        {
+            "title": "Finance",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 11,
+            "view_mode": "XYZ",
+            "view_pos": [
+                32.711997985839844,
+                114.96099853515625,
+                0.0
+            ]
+        },
+        {
+            "title": "Data provenance",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                42.52000045776367,
+                524.2540283203125,
+                0.0
+            ]
+        },
+        {
+            "title": "Sharing economy",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                311.50799560546875,
+                356.823974609375,
+                0.0
+            ]
+        },
+        {
+            "title": "Public sector",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                32.711997985839844,
+                741.9630126953125,
+                0.0
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                32.711997985839844,
+                147.40599060058594,
+                0.0
+            ]
+        },
+        {
+            "title": "Declaration of competing interest",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                301.70001220703125,
+                466.1289978027344,
+                0.0
+            ]
+        },
+        {
+            "title": "Acknowledgments",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                301.70001220703125,
+                401.8450012207031,
+                0.0
+            ]
+        },
+        {
+            "title": "References",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                301.70001220703125,
+                274.36297607421875,
+                0.0
+            ]
+        }
+    ],
+    "pages": 17,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0,
+        "ocr_engine": "none"
+    }
+}

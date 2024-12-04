@@ -1,0 +1,457 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "1 Introduction",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                289.89398193359375,
+                0.0
+            ]
+        },
+        {
+            "title": "2 Motivation",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 1,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                210.65501403808594,
+                0.0
+            ]
+        },
+        {
+            "title": "3 Design of a Blockchain Database",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 15,
+            "page_index": 2,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                245.83799743652344,
+                0.0
+            ]
+        },
+        {
+            "title": "3.1 Key Components",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 2,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                458.78900146484375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2 Serializable Snapshot Isolation (SSI)",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 3,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                298.3539733886719,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3 Order then Execute",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 4,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                384.7770080566406,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3.1 Ordering phase",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                260.2440185546875,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3.2 Execution phase",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                135.71099853515625,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3.3 Committing Phase",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                326.9939880371094,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3.4 Checkpointing Phase",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                453.75299072265625,
+                0.0
+            ]
+        },
+        {
+            "title": "3.4 Execute and Order in Parallel",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 4,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                287.3769836425781,
+                0.0
+            ]
+        },
+        {
+            "title": "3.4.1 Execution Phase",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                141.9219970703125,
+                0.0
+            ]
+        },
+        {
+            "title": "3.4.2 Ordering Phase",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                446.46099853515625,
+                0.0
+            ]
+        },
+        {
+            "title": "3.4.3 Committing Phase",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                353.0569763183594,
+                0.0
+            ]
+        },
+        {
+            "title": "3.4.4 Checkpointing Phase",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                126.09700012207031,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5 Discussion on Security Properties",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                738.2020263671875,
+                0.0
+            ]
+        },
+        {
+            "title": "3.6 Recovery After a Failure",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                509.30999755859375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.7 Network Bootstrapping",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                533.7689819335938,
+                0.0
+            ]
+        },
+        {
+            "title": "4 IMPLEMENTATION USING POSTGRESQL",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 5,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                293.6190185546875,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1 PostgreSQL Background",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                133.22100830078125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2 New Components Introduced",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                258.7200012207031,
+                0.0
+            ]
+        },
+        {
+            "title": "4.3 Components Modified",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                524.1940307617188,
+                0.0
+            ]
+        },
+        {
+            "title": "4.4 Ordering Service",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                462.176025390625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.5 Transaction Flow",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                209.37501525878906,
+                0.0
+            ]
+        },
+        {
+            "title": "5 Evaluation",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 11,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                323.5050048828125,
+                0.0
+            ]
+        },
+        {
+            "title": "5.1 Block Size and Arrival Rate",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                484.82098388671875,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2 Smart Contract Complexity",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                533.3709716796875,
+                0.0
+            ]
+        },
+        {
+            "title": "5.3 Deployment Model and Network Size",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                148.06500244140625,
+                0.0
+            ]
+        },
+        {
+            "title": "6 Related Work",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                410.5249938964844,
+                0.0
+            ]
+        },
+        {
+            "title": "7 Discussion and Future Work",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                316.81201171875,
+                289.3849792480469,
+                0.0
+            ]
+        },
+        {
+            "title": "8 Conclusion",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                655.2630004882812,
+                0.0
+            ]
+        },
+        {
+            "title": "9 References",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                484.9020080566406,
+                0.0
+            ]
+        },
+        {
+            "title": "A Smart Contracts used for evaluation",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 16,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.79800033569336,
+                724.06298828125,
+                0.0
+            ]
+        }
+    ],
+    "pages": 17,
+    "ocr_stats": {
+        "ocr_pages": 1,
+        "ocr_failed": 0,
+        "ocr_success": 1,
+        "ocr_engine": "surya"
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 3,
+        "equations": {
+            "successful_ocr": 0,
+            "unsuccessful_ocr": 0,
+            "equations": 0
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

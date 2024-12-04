@@ -1,0 +1,535 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "Introduction",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 1,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                720.8049926757812,
+                0.0
+            ]
+        },
+        {
+            "title": "Specifications and the legal framework",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 3,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                612.3270263671875,
+                0.0
+            ]
+        },
+        {
+            "title": "Enforcing requirements through standardization",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 3,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                337.3499755859375,
+                0.0
+            ]
+        },
+        {
+            "title": "Harmonized standards and the AI Act",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                590.27099609375,
+                0.0
+            ]
+        },
+        {
+            "title": "Standardization organizations and decision-making power ",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                263.37200927734375,
+                0.0
+            ]
+        },
+        {
+            "title": "Application areas",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                552.3270263671875,
+                0.0
+            ]
+        },
+        {
+            "title": "Natural language processing",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                467.4049987792969,
+                0.0
+            ]
+        },
+        {
+            "title": "Computer vision",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                768.18896484375,
+                0.0
+            ]
+        },
+        {
+            "title": "Others",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                557.7940673828125,
+                0.0
+            ]
+        },
+        {
+            "title": "Specifications",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 10,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                731.77099609375,
+                0.0
+            ]
+        },
+        {
+            "title": "What to specify",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                467.4049987792969,
+                0.0
+            ]
+        },
+        {
+            "title": "Robustness",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                425.4169921875,
+                0.0
+            ]
+        },
+        {
+            "title": "Fairness",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                566.27099609375,
+                0.0
+            ]
+        },
+        {
+            "title": "Capabilities",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                770.2260131835938,
+                0.0
+            ]
+        },
+        {
+            "title": "How to specify",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                501.3379821777344,
+                0.0
+            ]
+        },
+        {
+            "title": "Example-based specifications",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                423.3499755859375,
+                0.0
+            ]
+        },
+        {
+            "title": "Metric-based specifications",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                639.7820434570312,
+                0.0
+            ]
+        },
+        {
+            "title": "Measuring and improving",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                419.8479919433594,
+                0.0
+            ]
+        },
+        {
+            "title": "Evaluation",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                367.9259948730469,
+                0.0
+            ]
+        },
+        {
+            "title": "Improvement",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                282.49200439453125,
+                0.0
+            ]
+        },
+        {
+            "title": "Specification optimization",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 4,
+            "page_index": 11,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                662.27099609375,
+                0.0
+            ]
+        },
+        {
+            "title": "Specification optimization strategies",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 11,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                479.4049987792969,
+                0.0
+            ]
+        },
+        {
+            "title": "Specification optimization evaluation",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                564.3270263671875,
+                0.0
+            ]
+        },
+        {
+            "title": "Evaluation metrics",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                438.3379821777344,
+                0.0
+            ]
+        },
+        {
+            "title": "Specification overfitting analysis",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                770.2260131835938,
+                0.0
+            ]
+        },
+        {
+            "title": "A survey of specification overfitting",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 9,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                321.3379821777344,
+                0.0
+            ]
+        },
+        {
+            "title": "Method",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                584.9950561523438,
+                0.0
+            ]
+        },
+        {
+            "title": "Quantitative results",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 15,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                281.33599853515625,
+                0.0
+            ]
+        },
+        {
+            "title": "Scope and limitations analysis",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 18,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                768.18896484375,
+                0.0
+            ]
+        },
+        {
+            "title": "Examples of scope and limitations and counterexamples",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 18,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                572.2940673828125,
+                0.0
+            ]
+        },
+        {
+            "title": "Analysis of recommendations",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 19,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                732.3270263671875,
+                0.0
+            ]
+        },
+        {
+            "title": "Case studies",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                707.77099609375,
+                0.0
+            ]
+        },
+        {
+            "title": "HateCheck: Functional Tests for Hate Speech Detection Models rottger2021hatecheck",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                654.3380126953125,
+                0.0
+            ]
+        },
+        {
+            "title": "Benchmarking Neural Network Robustness to Common Corruptions and Perturbations hendrycks2018Benchmarking",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 21,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                722.27099609375,
+                0.0
+            ]
+        },
+        {
+            "title": "Net benefit, calibration, threshold selection, and training objectives for algorithmic fairness in healthcare pfohl2022Net",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 21,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                312.17901611328125,
+                0.0
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 22,
+            "view_mode": "XYZ",
+            "view_pos": [
+                100.07099914550781,
+                388.96099853515625,
+                0.0
+            ]
+        },
+        {
+            "title": "Acknowledgments",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 23,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                536.2489624023438,
+                0.0
+            ]
+        },
+        {
+            "title": "Author contributions",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 23,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                494.2710266113281,
+                0.0
+            ]
+        },
+        {
+            "title": "Competing interests",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 23,
+            "view_mode": "XYZ",
+            "view_pos": [
+                124.5949935913086,
+                385.3499755859375,
+                0.0
+            ]
+        }
+    ],
+    "pages": 40,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0,
+        "ocr_engine": "none"
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 1,
+        "equations": {
+            "successful_ocr": 0,
+            "unsuccessful_ocr": 0,
+            "equations": 0
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}
