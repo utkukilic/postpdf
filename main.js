@@ -43,8 +43,8 @@ function headingsAndLevels(lines) {
   let headingLevel, existingPoundCount, diff, dotCount;
   for (let i = 0; i < lines.length; i++) {
 
-    if (lines[i].startsWith("#")) {
-      // console.log("I;", i);
+    if (lines[i].startsWith("##")) {
+      //  console.log("I;", i,lines[i]);
       headingsMatrix[3][i] = true;
     }
     // } else {
@@ -55,6 +55,7 @@ function headingsAndLevels(lines) {
     headingsMatrix[1].push(lines[i]);
     headingsMatrix[2].push(0);
   }
+  
 
   for (let j = 0; j < lines.length; j++) {
     // console.log("J: ", j);
@@ -70,7 +71,8 @@ function headingsAndLevels(lines) {
         firstSpaceCharacterIndex + 1,
         secondSpaceCharacterIndex
       );
-      //console.log(headingTitle,firstSpaceCharacterIndex,secondSpaceCharacterIndex,"HEY")
+      // problem here!!
+      console.log(headingTitle,firstSpaceCharacterIndex,secondSpaceCharacterIndex,"HEY")
       dotCount = (headingTitle.match(/\./g) || []).length;
       headingsMatrix[2].push(dotCount);
     }
@@ -94,32 +96,57 @@ function headingsAndLevels(lines) {
   return headingsMatrix[1];
 }
 function checkMultipleHeadingsInARow(lines) {
+  let lines2 = lines
   for (let i = 0; i < lines.length; i++) {
+    let match = ""
     if (lines[i].startsWith("#")) {
-      let heading = lines[i]; // for better reading
-      let firstDotIndex = heading.indexOf(".");
-      let secondDotIndex = heading.indexOf(".", firstDotIndex + 1);
-      if (firstDotIndex >= 0 && secondDotIndex > 0) {
-        let substring = heading.slice(firstDotIndex, secondDotIndex + 1);
-        for (let k = 1; k < substring.length; k++) {
-          if (substring[substring.length - k] !== " ") {
-            continue;
-          } else {
-            let splIndex = substring.length - k + firstDotIndex;
-            correctLinesAndRestart(splIndex, i); // also line number needed
-            break;
-          }
-        }
+      //let heading = lines[i]; // for better reading
+      // console.log("Heading: ",heading)
+      // let firstDotIndex = heading.indexOf(".");
+      // let secondDotIndex = heading.indexOf(".", firstDotIndex + 1);
+      let reg = /^(#+\s\d+(\.\d+)*\s).*?\2?\.\d+/;
+      if(reg.test(lines[i])){
+        // console.log("MATCH: ", lines[i])
+        // console.log("MATCHING PART; ",lines[i].match(reg))
+        match = lines[i].match(reg)[0]
+        let lastSpaceIndex = match.lastIndexOf(" ")
+        let newHead = lines[i].substring(lastSpaceIndex)
+        // console.log(newHead)
+        // console.log(lines[i].substring(0,lastSpaceIndex))
+        lines2[i] = lines[i].substring(0, lastSpaceIndex);
+        lines2.splice(i+1,0,newHead)
+        lines2[i+1] = "##" + lines2[i+1]
+        // console.log("MATCH: ",match)
       }
+      // correctLinesAndRestart(match.lastIndexOf(" "),i,lines)
+      // if(secondDotIndex>0)
+      // {console.log(firstDotIndex,secondDotIndex)}
+      // if (firstDotIndex >= 0 && secondDotIndex > 0) {
+      //   let substring = heading.slice(firstDotIndex, secondDotIndex + 1);
+      //         console.log("SUBS: ",substring,substring.length );
+      //   for (let k = 1; k < substring.length; k++) {
+      //     if (substring[substring.length - k] !== " ") {
+      //       continue;
+      //     } else {
+      //       let splIndex = substring.length - k + firstDotIndex;
+      //             console.log("splIND: ", splIndex);
+      //       correctLinesAndRestart(splIndex, i); // also line number needed
+      //       break;
+      //     }
+      //   }
+      // }
     }
   }
-  return lines;
+  // console.log(lines2)
+  return lines2;
 }
-
+// in checkmultipleHeadings now
 function correctLinesAndRestart(splIndex, lineIndex, lines) {
-  let newHead = lines[lineInd].substring(splIndex);
-  lines[lineIndex] = lines[lineInd].substring(0, splIndex);
+  let newHead = lines[lineIndex].substring(splIndex);
+  console.log("NEW HEAD; ",newHead)
+  lines[lineIndex] = lines[lineIndex].substring(0, splIndex);
   lines.splice(lineIndex + 1, 0, newHead);
+  console.log("LINES: ",lines)
 }
 // // start of mozilla js one
 // function checkLine(array) {
@@ -140,8 +167,10 @@ function processLines(array) {
   const result = array.map((line) => {
     const hashCount = (line.match(/^#+/) || [""])[0].length;
     if (/^\d+\./.test(line) || /^[A-Za-z]+\./.test(line)) {
+      // console.log([line, "toUpd"])
       return [line, "toUpd"];
     }
+    // console.log([line, hashCount]);
     return [line, hashCount];
   });
 
@@ -220,7 +249,7 @@ function listHeadingIndexes(lines) {
   for (let i = 0; i < lines.length; i++) {
     if (lines[i].startsWith("##")) {
       
-       let matching = lines[i].match(/^#+\s+(\S+)\s/)[1]
+      //  let matching = lines[i].match(/^#+\s+(\S+)\s/)[1]
       //  console.log(lines[i].match(/^#+\s+(\S+)\s/),i);
       if (matching !== null) {
         list.push([i, matching]);
@@ -405,11 +434,11 @@ async function handler() {
   // ];
   //console.log(lines)
   const lines2 = checkMultipleHeadingsInARow(lines);
-  // console.log(lines2)
+    // console.log(lines2)
   const newLines = processLines(lines2);
-   console.log(newLines)
+    // console.log(newLines)
   const newLines2 = headingsAndLevels(newLines);
-  // console.log(newLines2)
+  //  console.log(newLines2)
   let headings = listHeadingIndexes(newLines2); // returns [index,text]
   //  console.log("Headings, ", headings);
 
