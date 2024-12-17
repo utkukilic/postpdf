@@ -2,6 +2,7 @@ import fs from "fs";
 import dotenv from "dotenv";
 dotenv.config();
 import fetch from "node-fetch";
+import { text } from "stream/consumers";
 
 const ApiKey = process.env.MISTRAL_API_KEY;
 
@@ -42,10 +43,10 @@ function headingsAndLevels(lines) {
   let firstSpaceCharacterIndex, secondSpaceCharacterIndex;
   let headingLevel, existingPoundCount, diff, dotCount;
   for (let i = 0; i < lines.length; i++) {
-
     if (lines[i].startsWith("##")) {
       //  console.log("I;", i,lines[i]);
       headingsMatrix[3][i] = true;
+      // console.log(headingsMatrix[3])
     }
     // } else {
     //   headingsMatrix[3].push(false);
@@ -55,67 +56,85 @@ function headingsAndLevels(lines) {
     headingsMatrix[1].push(lines[i]);
     headingsMatrix[2].push(0);
   }
-  
 
   for (let j = 0; j < lines.length; j++) {
     // console.log("J: ", j);
     if (headingsMatrix[3][j] === true) {
+      // console.log("J; ",j)
       firstSpaceCharacterIndex = lines[j].indexOf(" ");
       secondSpaceCharacterIndex = lines[j].indexOf(
         " ",
         firstSpaceCharacterIndex + 1
       );
+      // console.log(firstSpaceCharacterIndex,secondSpaceCharacterIndex)
+      if (firstSpaceCharacterIndex >= 0 && secondSpaceCharacterIndex >= 0) {
+        let headingTitle = lines[j].substring(
+          firstSpaceCharacterIndex + 1,
+          secondSpaceCharacterIndex
+        );
+        // console.log("HEADTITle: ", headingTitle, j);
+        // problem here!!
+        // console.log(headingTitle,firstSpaceCharacterIndex,secondSpaceCharacterIndex,"HEY")
+        dotCount = 0;
+
+        if (headingTitle.length > 1 && headingTitle.includes(".") === false) {
+          dotCount = -1;
+        } else if (headingTitle.length === 1) {
+          dotCount = 0;
+        } else {
+          for (let character of headingTitle) {
+            if (character === ".") {
+              dotCount = dotCount + 1;
+            }
+          }
+        }
+        headingsMatrix[2].push(dotCount);
+      }
     }
-    if (firstSpaceCharacterIndex >= 0 && secondSpaceCharacterIndex >= 0) {
-      let headingTitle = lines[j].substring(
-        firstSpaceCharacterIndex + 1,
-        secondSpaceCharacterIndex
-      );
-      // problem here!!
-      console.log(headingTitle,firstSpaceCharacterIndex,secondSpaceCharacterIndex,"HEY")
-      dotCount = (headingTitle.match(/\./g) || []).length;
-      headingsMatrix[2].push(dotCount);
-    }
-    headingLevel = dotCount + 1;
+
+    headingLevel = dotCount + 2;
     existingPoundCount = 0;
     for (let c of headingsMatrix[1][j]) {
       if (c === "#") {
+        // console.log("C: ",j)
         existingPoundCount = existingPoundCount + 1;
       } else {
         break;
       }
-      diff = headingLevel - existingPoundCount;
-      if (diff > 0) {
-        headingsMatrix[1][j] = "#".repeat(diff) + headingsMatrix[1][j];
-      } else if (diff < 0) {
-        headingsMatrix[1][j] = headingsMatrix[1][j].slice(-diff);
-      }
+      0;
+    }
+    diff = headingLevel - existingPoundCount;
+    //  console.log(j, diff, "J AND DIFF");
+    if (diff > 0 && headingsMatrix[3][j]) {
+      headingsMatrix[1][j] = "#".repeat(diff) + headingsMatrix[1][j];
+    } else if (diff < 0) {
+      headingsMatrix[1][j] = headingsMatrix[1][j].slice(-diff);
     }
   }
 
   return headingsMatrix[1];
 }
 function checkMultipleHeadingsInARow(lines) {
-  let lines2 = lines
+  let lines2 = lines;
   for (let i = 0; i < lines.length; i++) {
-    let match = ""
+    let match = "";
     if (lines[i].startsWith("#")) {
       //let heading = lines[i]; // for better reading
       // console.log("Heading: ",heading)
       // let firstDotIndex = heading.indexOf(".");
       // let secondDotIndex = heading.indexOf(".", firstDotIndex + 1);
       let reg = /^(#+\s\d+(\.\d+)*\s).*?\2?\.\d+/;
-      if(reg.test(lines[i])){
+      if (reg.test(lines[i])) {
         // console.log("MATCH: ", lines[i])
         // console.log("MATCHING PART; ",lines[i].match(reg))
-        match = lines[i].match(reg)[0]
-        let lastSpaceIndex = match.lastIndexOf(" ")
-        let newHead = lines[i].substring(lastSpaceIndex)
+        match = lines[i].match(reg)[0];
+        let lastSpaceIndex = match.lastIndexOf(" ");
+        let newHead = lines[i].substring(lastSpaceIndex);
         // console.log(newHead)
         // console.log(lines[i].substring(0,lastSpaceIndex))
         lines2[i] = lines[i].substring(0, lastSpaceIndex);
-        lines2.splice(i+1,0,newHead)
-        lines2[i+1] = "##" + lines2[i+1]
+        lines2.splice(i + 1, 0, newHead);
+        lines2[i + 1] = "##" + lines2[i + 1];
         // console.log("MATCH: ",match)
       }
       // correctLinesAndRestart(match.lastIndexOf(" "),i,lines)
@@ -141,13 +160,15 @@ function checkMultipleHeadingsInARow(lines) {
   return lines2;
 }
 // in checkmultipleHeadings now
-function correctLinesAndRestart(splIndex, lineIndex, lines) {
-  let newHead = lines[lineIndex].substring(splIndex);
-  console.log("NEW HEAD; ",newHead)
-  lines[lineIndex] = lines[lineIndex].substring(0, splIndex);
-  lines.splice(lineIndex + 1, 0, newHead);
-  console.log("LINES: ",lines)
-}
+// function correctLinesAndRestart(splIndex, lineIndex, lines) {
+//   let newHead = lines[lineIndex].substring(splIndex);
+//   console.log("NEW HEAD; ", newHead);
+//   lines[lineIndex] = lines[lineIndex].substring(0, splIndex);
+//   lines.splice(lineIndex + 1, 0, newHead);
+//   console.log("LINES: ", lines);
+// }
+
+
 // // start of mozilla js one
 // function checkLine(array) {
 //   return array.map((line) => {
@@ -196,7 +217,7 @@ function processLines(array) {
         }
       }
 
-      // Apply updates based on number-dot or letter-dot 
+      // Apply updates based on number-dot or letter-dot
       for (let i = lastDoubleHashIndex + 1; i < index; i++) {
         if (result[i][1] === "toUpd") {
           if (firstNumberDot !== -1 && firstLetterDot !== -1) {
@@ -246,50 +267,63 @@ function processLines(array) {
 }
 function listHeadingIndexes(lines) {
   let list = [];
+  let firstSpace, secondSpace;
   for (let i = 0; i < lines.length; i++) {
     if (lines[i].startsWith("##")) {
-      
-      //  let matching = lines[i].match(/^#+\s+(\S+)\s/)[1]
-      //  console.log(lines[i].match(/^#+\s+(\S+)\s/),i);
-      if (matching !== null) {
-        list.push([i, matching]);
+      firstSpace = lines[i].indexOf(" ");
+      secondSpace = lines[i].indexOf(" ", firstSpace + 1);
+      //  console.log(firstSpaceCharacterIndex,secondSpaceCharacterIndex)
+      if (firstSpace >= 0 && secondSpace >= 0) {
+        let headin = lines[i].substring(firstSpace + 1, secondSpace);
+
+        //  console.log(lines[i].match(/^#+\s+(\S+)\s/),i);
+        if (headin !== null && headin.length > 0) {
+          // console.log(firstSpaceCharacterIndex,secondSpaceCharacterIndex,headingTitle)
+          list.push([i, headin]);
+        }
+        // until the second space and then gets the parts with this confioguration:
+        // either "2" or "2.1.1" or "2.B.1" etc like the enumariton of heading
       }
-      // until the second space and then gets the parts with this confioguration:
-      // either "2" or "2.1.1" or "2.B.1" etc like the enumariton of heading
     }
+    // console.log("LIST; ",list)
   }
-  // console.log("LIST; ",list)
   return list;
 }
-
 // update in between lost headings
 // input is a matrix or creates a matrix with headings and their index
 // last step of headings!!
 async function inBetweenHeadings(lines, headings2D) {
-  for (let i = 0; i < headings2D[0].length; i++) {
+  for (let i = 0; i < headings2D.length; i++) {
+    //console.log(headings2D.length)
     let heading = headings2D[i][1];
+    //console.log("HEADING: ",heading)
     let oneMoreNormal, oneMoreWithDot, twoMoreNormal, twoMoreWithDot;
     let startingIndex, endingIndex;
     // console.log("HEADING: ", heading)
     // console.log(headings2D[1])
     let lastChar = heading.charAt(heading.length - 1);
-    // console.log(lastChar)
-    let lastCharOneMore = lastChar.charCodeAt(0) + 1;
-    let lastCharTwoMore = lastChar.charCodeAt(0) + 2;
+    // console.log("LASTCH: ",lastChar)
+    let lastCharOneMore = String.fromCharCode(lastChar.charCodeAt(0) + 1);
+    //console.log("LASTCHONEMORE: ",lastCharOneMore)
+    let lastCharTwoMore = String.fromCharCode(lastChar.charCodeAt(0) + 2);
     twoMoreNormal = heading.slice(0, -1) + lastCharTwoMore;
-    twoMoreWithDot = heading.slice(0, -1) + "." + lastCharTwoMore;
+    twoMoreWithDot = heading + ".2";
     oneMoreNormal = heading.slice(0, -1) + lastCharOneMore;
-    oneMoreWithDot = heading.slice(0, -1) + "." + lastCharOneMore;
-
+    oneMoreWithDot = heading + ".1";
+    // console.log("TWOMORE:",twoMoreNormal,"TWOMOREDOT: ",twoMoreWithDot,"ONEMORE: ",oneMoreNormal,"ONEMOREDOT: ",oneMoreWithDot,headings2D[i][1])
+    let listOfHeadings = headings2D.map((e) => e[1]);
+    let listOfIndexes = headings2D.map((e) => e[0]);
+    // console.log(listOfHeadings)
     if (
-      headings2D[1].includes(twoMoreNormal) &&
-      !headings2D[1].includes(oneMoreNormal)
+      listOfHeadings.includes(twoMoreNormal) &&
+      !listOfHeadings.includes(oneMoreNormal)
     ) {
+      //console.log("API SHOULD WORK!!");
       startingIndex = headings2D[i][0];
-      let endingIndexFinder = headings2D[1].findIndex(
+      let endingIndexFinder = listOfHeadings.findIndex(
         (item) => item === twoMoreNormal
       );
-      endingIndex = headings2D[0][endingIndexFinder];
+      endingIndex = listOfIndexes[endingIndexFinder];
       let toApi = lines.slice(startingIndex, endingIndex + 1);
       let missingHeading = oneMoreNormal;
       console.log("API THING1");
@@ -301,14 +335,15 @@ async function inBetweenHeadings(lines, headings2D) {
         endingIndex + 1
       );
     } else if (
-      headings2D[1].includes(twoMoreWithDot) &&
-      !headings2D[1].includes(oneMoreWithDot)
+      listOfHeadings.includes(twoMoreWithDot) &&
+      !listOfHeadings.includes(oneMoreWithDot)
     ) {
       startingIndex = headings2D[i][0];
-      let endingIndexFinder = headings2D[1].findIndex(
+      let endingIndexFinder = listOfHeadings.findIndex(
         (item) => item === twoMoreWithDot
       );
-      endingIndex = headings2D[0][endingIndexFinder];
+      // console.log("ENDINGFINDED; ", endingIndexFinder);
+      endingIndex = listOfIndexes[endingIndexFinder];
       let toApi = lines.slice(startingIndex, endingIndex + 1);
       let missingHeading = oneMoreWithDot;
       console.log("API THING2");
@@ -373,43 +408,74 @@ async function api(
   startingIndex,
   endingIndex
 ) {
-  const url = "https://api.mistral.ai/v1/completions";
+  let reply = ""
+  console.log("API START");
+  // console.log("TEXT API: ", textApi)
+  // console.log(textApi,missingHeading,startingIndex,endingIndex)
+  const url = "https://api.mistral.ai/v1/chat/completions";
   const apiKey = ApiKey;
   const requestBody = {
-    model: "mistral-8b-latest",
-    prompt: `${textApi} This is a markdown file that marks headings with multiple '#'. There is a heading that is not marked with '#' in this text. The first line is a heading, so is the last line. First Heading is on the first line and the last is on the last line. The missing one should have a similar format and the heading name after it. Correct the text with by moving this in between heading the a new line and marking it with proper number of '#' and rewrite the markdown. Missing headings should have the enumartion ${missingHeading} `,
-    max_tokens: 10000,
+    "model": "mistral-large-latest",
+    "messages": [
+      {
+        "role": "user",
+        "content": `${textApi}.The part before this is the input you work on. This is a markdown file that marks headings with multiple '#'. There is a heading that is not marked with '#' in this text. The first line is a heading, so is the last line. First Heading is on the first line and the last is on the last line. The missing one should have a similar format and the heading name after it. Correct the text with by moving this in between heading the a new line and marking it with proper number of '#' and rewrite the markdown. Missing headings should have the enumeration ${missingHeading}. The last line of your reply should be the last line of the input. Do not write more than that.Do not change any text other than newlines for heading in the input part.The first line of your reply should be there first line of the input.Do not write extra markdown as the first line. There is only one missing heading and that is the one that starts with ${missingHeading}. Do not add any more headings. `,
+
+      },
+    ],
+    "max_tokens": 10000,
   };
-  await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${apiKey}`, 
-    },
-    body: JSON.stringify(requestBody),
-  })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("API request failed");
-      }
-      const reply = response.choices[0].message.content;
-      return response.json(); 
-    })
-    .then((data) => {
-      console.log("Response from Mistral API:", data);
-      // log data, change the form later
-    })
-    .catch((error) => {
-      console.error("Error:", error);
+  const headers = {
+    "Content-Type": "application/json",
+    "Authorization": `Bearer ${apiKey}`,
+  };
+  // console.log("REACHED HERE!");
+  // await fetch(url, {
+  //   method: "POST",
+
+  //   body: JSON.stringify(requestBody),
+  // })
+  try {
+    // console.log("Request Body:", JSON.stringify(requestBody, null, 2));
+    const response = await fetch(url, {
+      method: "POST",
+      headers: headers,
+      body: JSON.stringify(requestBody),
     });
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    reply = data.choices[0].message.content.split("\n");
+
+    // console.log("FIRST:",linesArray.slice(0, startingIndex))
+    // console.log("REPLY: ", reply)
+    // console.log("LAST:", linesArray.slice(endingIndex+1));
+    // console.log("Mistral API Response:", data);
+  } catch (error) {
+    console.error("API CALL ERROR!!: ", error);
+  }
+  // .then((response) => {
+  //   if (!response.ok) {
+  //     console.log(response.json())
+  //     throw new Error("API request failed");
+  //   }
+  //   console.log(response.json())
+  //   return response.json();
+  // })
+  // .then((data) => {
+  //   console.log("Response from Mistral API:", data);
+  //   // log data, change the form later
+  // })
+  // .catch((error) => {
+  //   console.error("Error:", error);
+  // });
   return (
-    linesArray.slice(0, startingIndex) +
-    reply +
-    linesArray.slice(endingIndex + 1)
+    linesArray.slice(0, startingIndex).concat(reply,linesArray.slice(endingIndex + 1))
   );
 }
 async function handler() {
-   let lines = readTextFile(process.argv[2]); // lines of pdf as array
+  let lines = readTextFile(process.argv[2]); // lines of pdf as array
   // let lines = [
   //   "# Knowledge Conflicts For Llms: A Survey",
   //   "## Abstract",
@@ -434,18 +500,16 @@ async function handler() {
   // ];
   //console.log(lines)
   const lines2 = checkMultipleHeadingsInARow(lines);
-    // console.log(lines2)
+  // console.log(lines2)
   const newLines = processLines(lines2);
-    // console.log(newLines)
+  //  console.log(newLines)
   const newLines2 = headingsAndLevels(newLines);
   //  console.log(newLines2)
   let headings = listHeadingIndexes(newLines2); // returns [index,text]
-  //  console.log("Headings, ", headings);
 
   const updatedLines = await inBetweenHeadings(newLines2, headings);
-  // console.log(updatedLines)
-  const md = backToMD(updatedLines);
-  // console.log(md);
+   const md = backToMD(updatedLines);
+   console.log(md);
   //console.log(lines[48])
 }
 handler();
