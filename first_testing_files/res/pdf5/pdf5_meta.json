@@ -1,0 +1,353 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "Introduction",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.89800262451172,
+                310.9939880371094,
+                0.0
+            ]
+        },
+        {
+            "title": "Categorized by Data Augmentation Method",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 7,
+            "page_index": 1,
+            "view_mode": "XYZ",
+            "view_pos": [
+                312.94500732421875,
+                500.29400634765625,
+                0.0
+            ]
+        },
+        {
+            "title": "Data Perturbation",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 1,
+            "view_mode": "XYZ",
+            "view_pos": [
+                312.94500732421875,
+                325.43499755859375,
+                0.0
+            ]
+        },
+        {
+            "title": "Image-level Perturbation",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 1,
+            "view_mode": "XYZ",
+            "view_pos": [
+                312.94500732421875,
+                221.5019989013672,
+                0.0
+            ]
+        },
+        {
+            "title": "Human-level Perturbation",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                74.83499908447266,
+                200.82000732421875,
+                0.0
+            ]
+        },
+        {
+            "title": "Data Generation",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                305.00799560546875,
+                420.5579833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "Graphic Engine-based Generation",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                305.00799560546875,
+                402.5169982910156,
+                0.0
+            ]
+        },
+        {
+            "title": "Generative Model-based Generation",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                312.94500732421875,
+                722.27099609375,
+                0.0
+            ]
+        },
+        {
+            "title": "Data Recombination",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 11,
+            "view_mode": "XYZ",
+            "view_pos": [
+                74.83499908447266,
+                342.8639831542969,
+                0.0
+            ]
+        },
+        {
+            "title": "Categorized by Human-Centric Vision Tasks",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 6,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.89800262451172,
+                696.3340454101562,
+                0.0
+            ]
+        },
+        {
+            "title": "Person ReID",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.89800262451172,
+                519.4120483398438,
+                0.0
+            ]
+        },
+        {
+            "title": "Human Pose Estimation",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 15,
+            "view_mode": "XYZ",
+            "view_pos": [
+                312.94500732421875,
+                205.19500732421875,
+                0.0
+            ]
+        },
+        {
+            "title": "2D Human Pose Estimation",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 16,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.89800262451172,
+                602.27099609375,
+                0.0
+            ]
+        },
+        {
+            "title": "3D Human Pose Estimation",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 17,
+            "view_mode": "XYZ",
+            "view_pos": [
+                74.83499908447266,
+                316.9460144042969,
+                0.0
+            ]
+        },
+        {
+            "title": "Pedestrian Detection",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.89800262451172,
+                571.8629760742188,
+                0.0
+            ]
+        },
+        {
+            "title": "Human Parsing",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 22,
+            "view_mode": "XYZ",
+            "view_pos": [
+                305.00799560546875,
+                323.81500244140625,
+                0.0
+            ]
+        },
+        {
+            "title": "Future Work",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 23,
+            "view_mode": "XYZ",
+            "view_pos": [
+                312.94500732421875,
+                501.7660217285156,
+                0.0
+            ]
+        },
+        {
+            "title": "Data Generation with Diffusion Models",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 24,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.89800262451172,
+                556.8250122070312,
+                0.0
+            ]
+        },
+        {
+            "title": "Data Perturbation and Recombination with Diffusion Models",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 25,
+            "view_mode": "XYZ",
+            "view_pos": [
+                312.94500732421875,
+                593.0330200195312,
+                0.0
+            ]
+        },
+        {
+            "title": "Conclusion",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 26,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.89800262451172,
+                540.3340454101562,
+                0.0
+            ]
+        },
+        {
+            "title": "Declarations",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 4,
+            "page_index": 26,
+            "view_mode": "XYZ",
+            "view_pos": [
+                305.00799560546875,
+                768.18896484375,
+                0.0
+            ]
+        },
+        {
+            "title": "Availability of data and material",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 26,
+            "view_mode": "XYZ",
+            "view_pos": [
+                305.00799560546875,
+                749.260009765625,
+                0.0
+            ]
+        },
+        {
+            "title": "Competing interests",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 26,
+            "view_mode": "XYZ",
+            "view_pos": [
+                305.00799560546875,
+                608.8479614257812,
+                0.0
+            ]
+        },
+        {
+            "title": "Funding",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 26,
+            "view_mode": "XYZ",
+            "view_pos": [
+                305.00799560546875,
+                482.3739929199219,
+                0.0
+            ]
+        },
+        {
+            "title": "Authors' contributions",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 26,
+            "view_mode": "XYZ",
+            "view_pos": [
+                305.00799560546875,
+                357.83697509765625,
+                0.0
+            ]
+        }
+    ],
+    "pages": 36,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0,
+        "ocr_engine": "none"
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 6,
+        "equations": {
+            "successful_ocr": 0,
+            "unsuccessful_ocr": 0,
+            "equations": 0
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

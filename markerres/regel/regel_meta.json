@@ -1,0 +1,379 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "Anlage 1 - Modulliste",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                54.0,
+                775.0,
+                0.0
+            ]
+        },
+        {
+            "title": "AMTLICHES MITTEILUNGSBLATT",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                53.0,
+                699.0,
+                0.0
+            ]
+        },
+        {
+            "title": "\u00c4nderungslisten_MTS_SoSe19_bearbeitet.pdf",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Fak_Ausdruck",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                -0.037799835205078125,
+                842.0093383789062,
+                0.0
+            ]
+        },
+        {
+            "title": "I. Rechts- und Verwaltungsvorschriften Seite",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                48.0,
+                511.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Fakult\u00e4ten",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                48.0,
+                477.0,
+                0.0
+            ]
+        },
+        {
+            "title": "I. Rechts- und Verwaltungsvorschriften",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 20,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                760.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Fakult\u00e4ten",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 9,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                744.0,
+                0.0
+            ]
+        },
+        {
+            "title": "F\u00fcnfte \u00c4nderung der Studien- und Pr\u00fcfungsordnung f\u00fcr den Bachelorstudiengang Informatik an der Fakult\u00e4t IV Elektrotechnik und Informatik an der Technischen Universit\u00e4t Berlin",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                707.0,
+                0.0
+            ]
+        },
+        {
+            "title": "vom 22. Januar 2020",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                667.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Artikel I",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                524.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Artikel II - Inkrafttreten",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                384.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Vierte \u00c4nderung der Studien- und Pr\u00fcfungsordnung f\u00fcr den Bachelorstudiengang Technische Informatik an der Fakult\u00e4t IV Elektrotechnik und Informatik an der Tech- nischen Universit\u00e4t Berlin",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                773.0,
+                0.0
+            ]
+        },
+        {
+            "title": "vom 22. Januar 2020",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                729.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Artikel I",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                586.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Artikel II - Inkrafttreten",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                446.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Anlage",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                27.0,
+                786.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Gemeinsame Kommissionen",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 4,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                784.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Zweite \u00c4nderung der Studien- und Pr\u00fcfungsordnung f\u00fcr den gemeinsamen Bachelorstudiengang Medieninformatik der Fakult\u00e4t IV Elektrotechnik und Informatik an der Technischen Universit\u00e4t Berlin und des Fachbereichs Politik- und Sozialwissenschaften der Fr...",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                750.0,
+                0.0
+            ]
+        },
+        {
+            "title": "vom 10. M\u00e4rz 2020",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                690.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Artikel I",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                497.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Artikel II \u2013 Schlussbestimmungen",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                357.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Studierendenparlament",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 4,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                772.0,
+                0.0
+            ]
+        },
+        {
+            "title": "\u00c4nderung der Semesterticket-Satzung der Technischen Universit\u00e4t Berlin gem\u00e4\u00df \u00a7 18a Absatz 4 Berliner Hochschulgesetz",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                747.0,
+                0.0
+            ]
+        },
+        {
+            "title": "vom 7. Juli 2020",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                711.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Artikel I",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                589.0,
+                0.0
+            ]
+        },
+        {
+            "title": "Artikel II",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": null,
+            "view_mode": "XYZ",
+            "view_pos": [
+                43.0,
+                525.0,
+                0.0
+            ]
+        }
+    ],
+    "pages": 22,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0,
+        "ocr_engine": "none"
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 15,
+        "equations": {
+            "successful_ocr": 0,
+            "unsuccessful_ocr": 0,
+            "equations": 0
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

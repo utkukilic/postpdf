@@ -1,0 +1,109 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": " Introduction",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 0,
+            "view_mode": "Fit",
+            "view_pos": []
+        },
+        {
+            "title": " PDF Parsing",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "Fit",
+            "view_pos": []
+        },
+        {
+            "title": " Optical Character Recognition (OCR)",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "Fit",
+            "view_pos": []
+        },
+        {
+            "title": " Methodology",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "Fit",
+            "view_pos": []
+        },
+        {
+            "title": " Result and Analysis",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 0,
+            "view_mode": "Fit",
+            "view_pos": []
+        },
+        {
+            "title": " PDF Parsing vs OCR: Extraction Incompatibility",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "Fit",
+            "view_pos": []
+        },
+        {
+            "title": " Time and Accuracy Comparison",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "Fit",
+            "view_pos": []
+        },
+        {
+            "title": " Conclusion",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "Fit",
+            "view_pos": []
+        },
+        {
+            "title": " References",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "Fit",
+            "view_pos": []
+        }
+    ],
+    "pages": 3,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0,
+        "ocr_engine": "none"
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 1,
+        "equations": {
+            "successful_ocr": 3,
+            "unsuccessful_ocr": 2,
+            "equations": 5
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

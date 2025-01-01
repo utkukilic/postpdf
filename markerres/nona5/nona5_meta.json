@@ -1,0 +1,704 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "1 Einleitung",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "1.1 Zielsetzung",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 6,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                578.4100341796875,
+                0.0
+            ]
+        },
+        {
+            "title": "1.2 Gliederung der Arbeit",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "2 Grundlagen",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 5,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "2.1 Ubiquitous Computing",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                617.8270263671875,
+                0.0
+            ]
+        },
+        {
+            "title": "2.1.1 Pervasive Computing",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "2.1.2 Ambient Intelligence",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                429.4849853515625,
+                0.0
+            ]
+        },
+        {
+            "title": "2.2 Verteilte Systeme",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                241.3939971923828,
+                0.0
+            ]
+        },
+        {
+            "title": "2.3 Smart Home",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "2.4 Kontext",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                461.0199890136719,
+                0.0
+            ]
+        },
+        {
+            "title": "2.5 Android\u2122",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                529.1240234375,
+                0.0
+            ]
+        },
+        {
+            "title": "3 Analyse",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 17,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "3.1 Szenarien",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 17,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                548.64697265625,
+                0.0
+            ]
+        },
+        {
+            "title": "3.1.1 Besucher klingelt",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 17,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                421.4049987792969,
+                0.0
+            ]
+        },
+        {
+            "title": "3.1.2 Benutzerauthentifizierung",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 19,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                260.3879699707031,
+                0.0
+            ]
+        },
+        {
+            "title": "3.1.3 Mobile T\u00fcrklingel",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 21,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                370.62200927734375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2 Anforderungsanalyse",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 22,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                503.69000244140625,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.1 Funktionale Anforderungen",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 22,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                406.2080078125,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.2 Nicht-Funktionale Anforderungen",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 27,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                626.198974609375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3 Kontextabh\u00e4ngigkeit",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 29,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                683.0180053710938,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3.1 Identifizierte Kontexte",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 29,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                406.7060241699219,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3.2 Informationsgewinnung",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 30,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                617.426025390625,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3.3 Entscheidungsfindung",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 30,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                416.6000061035156,
+                0.0
+            ]
+        },
+        {
+            "title": "3.4 Interaktionen",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 31,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                683.0180053710938,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5 Machbarkeitsstudie",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 33,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5.1 Anforderungen",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 33,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                604.4830322265625,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5.2 Beispielprojekte",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 33,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                358.8249816894531,
+                0.0
+            ]
+        },
+        {
+            "title": "3.6 Fazit",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 34,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                683.0180053710938,
+                0.0
+            ]
+        },
+        {
+            "title": "4 Design",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 35,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1 Architektur",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 35,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                548.64697265625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1.1 System\u00fcberblick",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 35,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                294.50201416015625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1.2 Abgrenzungen",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 41,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                366.76800537109375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1.3 Komponentenarchitektur",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 43,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                579.8170166015625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1.4 Model-View-Controller",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 43,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                460.9329833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2 Kommunikation",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 46,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                287.91998291015625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2.1 Synchrone Kommunikation",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 47,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2.2 Asynchrone Kommunikation",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 47,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                430.156005859375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.3 Dienste",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 49,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                221.4189910888672,
+                0.0
+            ]
+        },
+        {
+            "title": "4.4 Fazit",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 52,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                563.4660034179688,
+                0.0
+            ]
+        },
+        {
+            "title": "5 Realisierung",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 56,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "5.1 Technische Umsetzung",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 56,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                446.3089904785156,
+                0.0
+            ]
+        },
+        {
+            "title": "5.1.1 T\u00fcrklingel",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 56,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                316.7980041503906,
+                0.0
+            ]
+        },
+        {
+            "title": "5.1.2 Gegenstellen",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 58,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                273.71502685546875,
+                0.0
+            ]
+        },
+        {
+            "title": "5.1.3 Kommunikation",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 59,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                425.42498779296875,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2 Evaluation",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 62,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                358.7190246582031,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2.1 Erf\u00fcllung der Anforderungen",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 62,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                246.29299926757812,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2.2 Funktionsweise des Prototypen",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 64,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                266.27001953125,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2.3 Erkenntnisse aus der Evaluation",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 68,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "6 Schluss",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 69,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "6.1 Zusammenfassung",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 69,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                622.5120239257812,
+                0.0
+            ]
+        },
+        {
+            "title": "6.2 Ausblick",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 70,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                616.0189819335938,
+                0.0
+            ]
+        },
+        {
+            "title": "Literaturverzeichnis",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 72,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.81100463867188,
+                732.0059814453125,
+                0.0
+            ]
+        }
+    ],
+    "pages": 77,
+    "ocr_stats": {
+        "ocr_pages": 4,
+        "ocr_failed": 0,
+        "ocr_success": 4,
+        "ocr_engine": "surya"
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 4,
+        "equations": {
+            "successful_ocr": 0,
+            "unsuccessful_ocr": 0,
+            "equations": 0
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

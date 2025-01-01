@@ -1,25 +1,12 @@
 import fs from "fs";
 import dotenv from "dotenv";
+import path from "path"
 dotenv.config();
-import fetch from "node-fetch";
-import { text } from "stream/consumers";
-
-const ApiKey = process.env.MISTRAL_API_KEY;
 
 const numbers = [];
 let mdPath;
 for (let i = 1; i <= 100; i++) {
   numbers.push(i);
-}
-// all the non-capital characters in latin alphabet
-const alphabet = [];
-for (let i = 97; i <= 122; i++) {
-  alphabet.push(String.fromCharCode(i));
-}
-// all the capital characters in the latin alphabet
-const capitalAlphabet = [];
-for (let i = 65; i <= 90; i++) {
-  capitalAlphabet.push(String.fromCharCode(i));
 }
 
 function readTextFile(filePath) {
@@ -44,37 +31,25 @@ function headingsAndLevels(lines) {
   let headingLevel, existingPoundCount, diff, dotCount;
   for (let i = 0; i < lines.length; i++) {
     if (lines[i].startsWith("##")) {
-      //  console.log("I;", i,lines[i]);
       headingsMatrix[3][i] = true;
-      // console.log(headingsMatrix[3])
     }
-    // } else {
-    //   headingsMatrix[3].push(false);
-    // }
     headingsMatrix[0].push(i);
-
     headingsMatrix[1].push(lines[i]);
     headingsMatrix[2].push(0);
   }
 
   for (let j = 0; j < lines.length; j++) {
-    // console.log("J: ", j);
     if (headingsMatrix[3][j] === true) {
-      // console.log("J; ",j)
       firstSpaceCharacterIndex = lines[j].indexOf(" ");
       secondSpaceCharacterIndex = lines[j].indexOf(
         " ",
         firstSpaceCharacterIndex + 1
       );
-      // console.log(firstSpaceCharacterIndex,secondSpaceCharacterIndex)
       if (firstSpaceCharacterIndex >= 0 && secondSpaceCharacterIndex >= 0) {
         let headingTitle = lines[j].substring(
           firstSpaceCharacterIndex + 1,
           secondSpaceCharacterIndex
         );
-        // console.log("HEADTITle: ", headingTitle, j);
-        // problem here!!
-        // console.log(headingTitle,firstSpaceCharacterIndex,secondSpaceCharacterIndex,"HEY")
         dotCount = 0;
 
         if (headingTitle.length > 1 && headingTitle.includes(".") === false) {
@@ -107,8 +82,6 @@ function headingsAndLevels(lines) {
     //  console.log(j, diff, "J AND DIFF");
     if (diff > 0 && headingsMatrix[3][j]) {
       headingsMatrix[1][j] = "#".repeat(diff) + headingsMatrix[1][j];
-    } else if (diff < 0) {
-      headingsMatrix[1][j] = headingsMatrix[1][j].slice(-diff);
     }
   }
 
@@ -119,152 +92,22 @@ function checkMultipleHeadingsInARow(lines) {
   for (let i = 0; i < lines.length; i++) {
     let match = "";
     if (lines[i].startsWith("#")) {
-      //let heading = lines[i]; // for better reading
-      // console.log("Heading: ",heading)
-      // let firstDotIndex = heading.indexOf(".");
-      // let secondDotIndex = heading.indexOf(".", firstDotIndex + 1);
       let reg = /^(#+\s\d+(\.\d+)*\s).*?\2?\.\d+/;
       if (reg.test(lines[i])) {
-        // console.log("MATCH: ", lines[i])
-        // console.log("MATCHING PART; ",lines[i].match(reg))
         match = lines[i].match(reg)[0];
         let lastSpaceIndex = match.lastIndexOf(" ");
         let newHead = lines[i].substring(lastSpaceIndex);
-        // console.log(newHead)
-        // console.log(lines[i].substring(0,lastSpaceIndex))
+
         lines2[i] = lines[i].substring(0, lastSpaceIndex);
         lines2.splice(i + 1, 0, newHead);
         lines2[i + 1] = "##" + lines2[i + 1];
-        // console.log("MATCH: ",match)
       }
-      // correctLinesAndRestart(match.lastIndexOf(" "),i,lines)
-      // if(secondDotIndex>0)
-      // {console.log(firstDotIndex,secondDotIndex)}
-      // if (firstDotIndex >= 0 && secondDotIndex > 0) {
-      //   let substring = heading.slice(firstDotIndex, secondDotIndex + 1);
-      //         console.log("SUBS: ",substring,substring.length );
-      //   for (let k = 1; k < substring.length; k++) {
-      //     if (substring[substring.length - k] !== " ") {
-      //       continue;
-      //     } else {
-      //       let splIndex = substring.length - k + firstDotIndex;
-      //             console.log("splIND: ", splIndex);
-      //       correctLinesAndRestart(splIndex, i); // also line number needed
-      //       break;
-      //     }
-      //   }
-      // }
     }
   }
   // console.log(lines2)
   return lines2;
 }
-// in checkmultipleHeadings now
-// function correctLinesAndRestart(splIndex, lineIndex, lines) {
-//   let newHead = lines[lineIndex].substring(splIndex);
-//   console.log("NEW HEAD; ", newHead);
-//   lines[lineIndex] = lines[lineIndex].substring(0, splIndex);
-//   lines.splice(lineIndex + 1, 0, newHead);
-//   console.log("LINES: ", lines);
-// }
 
-
-// // start of mozilla js one
-// function checkLine(array) {
-//   return array.map((line) => {
-//     if (/^#+[IiVvXx]*\.$/.test(line)) {
-//       return `##${line}`; // line starts with any number of '#' then any number of these characters: 'I,i,V,v,X,x" and then a dot
-//     } else if (/^[IiVvXx]*\.$/.test(line)) {
-//       return 2; // if does not have a '#' at the start but starts with any number of these characters: 'I,i,V,v,X,x"  then a dot. for testings can be dleeted later
-//     } else {
-//       return 0; // it is not either
-//     }
-//   });
-// }
-
-function processLines(array) {
-  // Step 1: Create the 2D array with '#' counts and "toUpd" markings.
-  //toIpd ares that start with '1.' or "A." stzle
-  const result = array.map((line) => {
-    const hashCount = (line.match(/^#+/) || [""])[0].length;
-    if (/^\d+\./.test(line) || /^[A-Za-z]+\./.test(line)) {
-      // console.log([line, "toUpd"])
-      return [line, "toUpd"];
-    }
-    // console.log([line, hashCount]);
-    return [line, hashCount];
-  });
-
-  // Step 2: Process each section between `##` lines and also the last segment after the last `##`.
-  let lastDoubleHashIndex = -1; // init index for '##' start of a line aka a heading
-
-  for (let index = 0; index <= result.length; index++) {
-    if (index === result.length || result[index][1] === 2) {
-      // Process the section from ldoubHasInd up to index
-      let firstNumberDot = -1;
-      let firstLetterDot = -1;
-
-      for (let i = lastDoubleHashIndex + 1; i < index; i++) {
-        if (result[i][1] === "toUpd") {
-          if (/^\d+\./.test(result[i][0]) && firstNumberDot === -1) {
-            firstNumberDot = i;
-          } else if (
-            /^[A-Za-z]+\./.test(result[i][0]) &&
-            firstLetterDot === -1
-          ) {
-            firstLetterDot = i;
-          }
-        }
-      }
-
-      // Apply updates based on number-dot or letter-dot
-      for (let i = lastDoubleHashIndex + 1; i < index; i++) {
-        if (result[i][1] === "toUpd") {
-          if (firstNumberDot !== -1 && firstLetterDot !== -1) {
-            if (
-              firstNumberDot < firstLetterDot &&
-              /^\d+\./.test(result[i][0])
-            ) {
-              result[i][0] = "###" + result[i][0];
-            } else if (
-              firstNumberDot < firstLetterDot &&
-              /^[A-Za-z]+\./.test(result[i][0])
-            ) {
-              result[i][0] = "####" + result[i][0];
-            } else if (
-              firstLetterDot < firstNumberDot &&
-              /^[A-Za-z]+\./.test(result[i][0])
-            ) {
-              result[i][0] = "###" + result[i][0];
-            } else if (
-              firstLetterDot < firstNumberDot &&
-              /^\d+\./.test(result[i][0])
-            ) {
-              result[i][0] = "####" + result[i][0];
-            }
-          } else if (
-            firstLetterDot !== -1 &&
-            firstNumberDot === -1 &&
-            /^\d+\./.test(result[i][0])
-          ) {
-            result[i][0] = "###" + result[i][0];
-          } else if (
-            firstLetterDot === -1 &&
-            firstNumberDot !== -1 &&
-            /^\d+\./.test(result[i][0])
-          ) {
-            result[i][0] = "###" + result[i][0];
-          }
-        }
-      }
-
-      // Update the index of the last `##` for the next section
-      lastDoubleHashIndex = index < result.length ? index : -1;
-    }
-  }
-
-  return result.map((row) => row[0]);
-}
 function listHeadingIndexes(lines) {
   let list = [];
   let firstSpace, secondSpace;
@@ -292,48 +135,61 @@ function listHeadingIndexes(lines) {
 // update in between lost headings
 // input is a matrix or creates a matrix with headings and their index
 // last step of headings!!
-async function inBetweenHeadings(lines, headings2D) {
+function inBetweenHeadings(lines, headings2D) {
+  let lines2 = lines;
   for (let i = 0; i < headings2D.length; i++) {
-    //console.log(headings2D.length)
+    let missingHeadingText = "";
+    let missingHeading = "";
     let heading = headings2D[i][1];
-    //console.log("HEADING: ",heading)
     let oneMoreNormal, oneMoreWithDot, twoMoreNormal, twoMoreWithDot;
     let startingIndex, endingIndex;
-    // console.log("HEADING: ", heading)
-    // console.log(headings2D[1])
     let lastChar = heading.charAt(heading.length - 1);
-    // console.log("LASTCH: ",lastChar)
     let lastCharOneMore = String.fromCharCode(lastChar.charCodeAt(0) + 1);
-    //console.log("LASTCHONEMORE: ",lastCharOneMore)
     let lastCharTwoMore = String.fromCharCode(lastChar.charCodeAt(0) + 2);
     twoMoreNormal = heading.slice(0, -1) + lastCharTwoMore;
     twoMoreWithDot = heading + ".2";
     oneMoreNormal = heading.slice(0, -1) + lastCharOneMore;
     oneMoreWithDot = heading + ".1";
-    // console.log("TWOMORE:",twoMoreNormal,"TWOMOREDOT: ",twoMoreWithDot,"ONEMORE: ",oneMoreNormal,"ONEMOREDOT: ",oneMoreWithDot,headings2D[i][1])
     let listOfHeadings = headings2D.map((e) => e[1]);
     let listOfIndexes = headings2D.map((e) => e[0]);
-    // console.log(listOfHeadings)
     if (
       listOfHeadings.includes(twoMoreNormal) &&
       !listOfHeadings.includes(oneMoreNormal)
     ) {
-      //console.log("API SHOULD WORK!!");
       startingIndex = headings2D[i][0];
       let endingIndexFinder = listOfHeadings.findIndex(
         (item) => item === twoMoreNormal
       );
       endingIndex = listOfIndexes[endingIndexFinder];
-      let toApi = lines.slice(startingIndex, endingIndex + 1);
-      let missingHeading = oneMoreNormal;
-      console.log("API THING1");
-      return await api(
-        lines,
-        toApi,
-        missingHeading,
-        startingIndex,
-        endingIndex + 1
-      );
+      missingHeading = oneMoreNormal;
+
+      for (let k = startingIndex; k <= endingIndex; k++) {
+        if (lines[k].includes(missingHeading)) {
+          let indo = lines[k].indexOf(missingHeading);
+          let searchText = lines[k].slice(indo);
+          let firstspaceIndex = searchText.indexOf(" ");
+          let lastDotInd = searchText.lastIndexOf(".");
+          missingHeadingText = searchText.slice(0, lastDotInd);
+          for (let c = firstspaceIndex + 1; c < searchText.length - 1; c++) {
+            if (searchText[c] === ".") {
+              missingHeadingText = searchText.slice(0, c);
+              lines2.splice(k, 0, "## " + missingHeadingText);
+              lines2[k + 1] = lines2[k + 1].replace(missingHeadingText, "");
+              break;
+            } else if (
+              searchText[c] === " " &&
+              searchText[c + 1] <= "z" &&
+              searchText[c + 1] >= "a"
+            ) {
+              missingHeadingText = searchText.slice(0, c);
+              lines2.splice(k, 0, "## " + missingHeadingText);
+              lines2[k + 1] = lines2[k + 1].replace(missingHeadingText, "");
+              break;
+            }
+          }
+          break;
+        }
+      }
     } else if (
       listOfHeadings.includes(twoMoreWithDot) &&
       !listOfHeadings.includes(oneMoreWithDot)
@@ -342,57 +198,114 @@ async function inBetweenHeadings(lines, headings2D) {
       let endingIndexFinder = listOfHeadings.findIndex(
         (item) => item === twoMoreWithDot
       );
-      // console.log("ENDINGFINDED; ", endingIndexFinder);
       endingIndex = listOfIndexes[endingIndexFinder];
-      let toApi = lines.slice(startingIndex, endingIndex + 1);
       let missingHeading = oneMoreWithDot;
-      console.log("API THING2");
-      return await api(
-        lines,
-        toApi,
-        missingHeading,
-        startingIndex,
-        endingIndex + 1
-      );
+      for (let j = startingIndex; j <= endingIndex; j++) {
+        if (lines[j].includes(missingHeading)) {
+          let indo = lines[j].indexOf(missingHeading);
+          let searchText = lines[j].slice(indo);
+          let firstspaceIndex = searchText.indexOf(" ");
+          let lastDotInd = searchText.lastIndexOf(".");
+          missingHeadingText = searchText.slice(0, lastDotInd);
+          for (let ch = firstspaceIndex + 1; ch < searchText.length - 1; ch++) {
+            if (searchText[ch] === ".") {
+              missingHeadingText = searchText.slice(0, ch);
+              lines2.splice(k - 1, 0, "##" + missingHeadingText);
+              lines2[k + 1] = lines[k + 1].replace(missingHeadingText, "");
+              break;
+            } else if (
+              searchText[ch] === " " &&
+              searchText[ch + 1] < "z" &&
+              searchText[ch + 1] > "a"
+            ) {
+              missingHeadingText = searchText.slice(0, ch);
+              lines2.splice(j - 1, 0, "##" + missingHeadingText);
+              lines2[j + 1] = lines[j + 1].replace(missingHeadingText, "");
+              break;
+            }
+          }
+          break;
+        }
+      }
+    }
+  }
+  return lines2;
+}
+
+//check for listing element in another list element
+function checkListings(lines) {
+  let firstC = "";
+  let index;
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i][0] === "-" || lines[i][0] === "*") {
+      firstC = lines[i][0];
+    }
+    for (let j = i; j < lines.length; j++) {
+      if (!(lines[i][0] === "-") && !(lines[i][0] === "*")) {
+        break;
+      } else {
+        let count = 0;
+        for (let c of lines[j]) {
+          if (c === firstC) {
+            count = count + 1;
+          }
+        }
+        if (count > 1) {
+          let text = lines[j].slice(1);
+          index = text.indexOf(firstC);
+          if (text[index - 1] === " " && text[index + 1] === " ") {
+            let listElement = lines[j].substring(index + 1);
+            lines[j] = lines[j].slice(0, index + 1);
+            lines.splice(j + 1, 0, listElement);
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  return lines;
+}
+// not showing good results
+function missingHeadingEnumaeration(lines) {
+  let headingAndIndex = [];
+  let startingCharacterRegex = /^\d/;
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].startsWith("#")) {
+      headingAndIndex.push(lines[i].replaceAll("#", ""), i);
+    }
+  }
+  // console.log(headingAndIndex);
+  for (let j = 1; j < headingAndIndex.length; j++) {
+    if (!startingCharacterRegex.test(headingAndIndex[0][j])) {
+      break;
+    }
+  }
+}
+// if a line consists of only italic or bold text it is highly likely a mistake and should be a heading
+function italicAndBolToHeading(lines) {
+  for (let i = 0; i < lines.length; i++) {
+    if (i === 101) {
+    }
+    let text = lines[i].replaceAll(" ", "");
+    if (
+      text.startsWith("_") &&
+      text.endsWith("_") &&
+      (text.match(/_/g) || []).length === 2
+    ) {
+      lines[i] = "## " + lines[i];
+    } else if (
+      text.startsWith("**") &&
+      text.endsWith("**") &&
+      (text.match(/\*/g) || []).length === 4
+    ) {
+      {
+        lines[i] = "## " + lines[i];
+      }
     }
   }
   return lines;
 }
-//   while (shouldCheck) {
-//     for (let i = 0; i < headings.length - 1; i++) {
-//       // get all the headings,their index in the lines and their Number eg 4.2 or 1.b
-//       // check for all if eg 4.2 exist check for 4.2+2 if that also exists and 4.2+1 search it in the text turn it into a heading. Check where it ends with gpt
-//       // check the same for 3.b, 3.b+2 (3.d) then 3b+1(3c)
-//       // if it is done update all the lines by moving them to plus +1 line and set should check True and run inBetweenHeadgings(headings..)
-//       // before updating Correct the heading line
-//     }
-//   }
-// }
-function checkListings(lines) {}
-
-// Example usage:
-const lines = [
-  "5.",
-  "Some text",
-  "10.",
-  "A line",
-  "## Heading 1",
-  "I.",
-  "Another line",
-  "20.",
-  "IX.",
-  "1.2 StartHeading",
-  "dsijandjksankjdsajkndnjkskjnsdaknnkjsa 1.2.1 Test Heading",
-  "1.2.2 endingHeading",
-  "## Heading 2 ## 2.Heading",
-  "Text here.",
-  "15.",
-  "III.",
-  "## Heading 3.2.4",
-  "1. dskoajidaisjdsaji",
-  "B.dasmdasmdmasi",
-  "##Heading4",
-];
 
 // const processed = processLines(lines);
 // console.log(processed);
@@ -400,116 +313,32 @@ function backToMD(lines) {
   // console.log(lines)
   return lines.map((element) => `${element}`).join("\n");
 }
-
-async function api(
-  linesArray,
-  textApi,
-  missingHeading,
-  startingIndex,
-  endingIndex
-) {
-  let reply = ""
-  console.log("API START");
-  // console.log("TEXT API: ", textApi)
-  // console.log(textApi,missingHeading,startingIndex,endingIndex)
-  const url = "https://api.mistral.ai/v1/chat/completions";
-  const apiKey = ApiKey;
-  const requestBody = {
-    "model": "mistral-large-latest",
-    "messages": [
-      {
-        "role": "user",
-        "content": `${textApi}.The part before this is the input you work on. This is a markdown file that marks headings with multiple '#'. There is a heading that is not marked with '#' in this text. The first line is a heading, so is the last line. First Heading is on the first line and the last is on the last line. The missing one should have a similar format and the heading name after it. Correct the text with by moving this in between heading the a new line and marking it with proper number of '#' and rewrite the markdown. Missing headings should have the enumeration ${missingHeading}. The last line of your reply should be the last line of the input. Do not write more than that.Do not change any text other than newlines for heading in the input part.The first line of your reply should be there first line of the input.Do not write extra markdown as the first line. There is only one missing heading and that is the one that starts with ${missingHeading}. Do not add any more headings. `,
-
-      },
-    ],
-    "max_tokens": 10000,
-  };
-  const headers = {
-    "Content-Type": "application/json",
-    "Authorization": `Bearer ${apiKey}`,
-  };
-  // console.log("REACHED HERE!");
-  // await fetch(url, {
-  //   method: "POST",
-
-  //   body: JSON.stringify(requestBody),
-  // })
-  try {
-    // console.log("Request Body:", JSON.stringify(requestBody, null, 2));
-    const response = await fetch(url, {
-      method: "POST",
-      headers: headers,
-      body: JSON.stringify(requestBody),
-    });
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const data = await response.json();
-    reply = data.choices[0].message.content.split("\n");
-
-    // console.log("FIRST:",linesArray.slice(0, startingIndex))
-    // console.log("REPLY: ", reply)
-    // console.log("LAST:", linesArray.slice(endingIndex+1));
-    // console.log("Mistral API Response:", data);
-  } catch (error) {
-    console.error("API CALL ERROR!!: ", error);
-  }
-  // .then((response) => {
-  //   if (!response.ok) {
-  //     console.log(response.json())
-  //     throw new Error("API request failed");
-  //   }
-  //   console.log(response.json())
-  //   return response.json();
-  // })
-  // .then((data) => {
-  //   console.log("Response from Mistral API:", data);
-  //   // log data, change the form later
-  // })
-  // .catch((error) => {
-  //   console.error("Error:", error);
-  // });
-  return (
-    linesArray.slice(0, startingIndex).concat(reply,linesArray.slice(endingIndex + 1))
-  );
+function saveToFile(md, path) {
+  fs.writeFileSync(path, md);
 }
+
 async function handler() {
   let lines = readTextFile(process.argv[2]); // lines of pdf as array
-  // let lines = [
-  //   "# Knowledge Conflicts For Llms: A Survey",
-  //   "## Abstract",
-  //   "## 1 Introduction",
-  //   "## 2 **Context-Memory Conflict**",
-  //   "## 2.1 Causes",
-  //   "I.",
-  //   "Another line",
-  //   "20.",
-  //   "IX.",
-  //   "##1.2 StartHeading",
-  //   "dsijandjksankjdsajkndnjkskjnsdaknnkjsa 1.2.1 Test Heading",
-  //   "##1.2.2 endingHeading",
-  //   "## Heading 2 ## 2.Heading",
-  //   "Text here.",
-  //   "15.",
-  //   "III.",
-  //   "## Heading 3.2.4",
-  //   "1. dskoajidaisjdsaji",
-  //   "B.dasmdasmdmasi",
-  //   "##Heading4",
-  // ];
   //console.log(lines)
-  const lines2 = checkMultipleHeadingsInARow(lines);
+  const lines2 = italicAndBolToHeading(lines);
+  const lines3 = checkMultipleHeadingsInARow(lines2);
   // console.log(lines2)
-  const newLines = processLines(lines2);
+  // const newLines = processLines(lines2);
   //  console.log(newLines)
-  const newLines2 = headingsAndLevels(newLines);
+  const lines4 = headingsAndLevels(lines3);
   //  console.log(newLines2)
-  let headings = listHeadingIndexes(newLines2); // returns [index,text]
+  let headings = listHeadingIndexes(lines4); // returns [index,text]
 
-  const updatedLines = await inBetweenHeadings(newLines2, headings);
-   const md = backToMD(updatedLines);
-   console.log(md);
-  //console.log(lines[48])
+  const lines5 = inBetweenHeadings(lines4, headings);
+  // console.log(updatedLines.slice(309,320))
+  // console.log(updatedLines)
+
+  const lines6 = checkListings(lines5);
+
+  //missingHeadingEnumaeration(afterListing);
+  // console.log(afterListing)
+  const md = backToMD(lines6);
+  //console.log(md);
+  saveToFile(md, "method_results/pymupdf/block.md");
 }
 handler();

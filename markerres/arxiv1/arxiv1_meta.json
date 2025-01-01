@@ -1,0 +1,197 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "Introduction",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.82066345214844,
+                258.3863220214844,
+                0.0
+            ]
+        },
+        {
+            "title": "Related Work",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 1,
+            "view_mode": "XYZ",
+            "view_pos": [
+                313.8635559082031,
+                430.99114990234375,
+                0.0
+            ]
+        },
+        {
+            "title": "Methodology",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 5,
+            "page_index": 2,
+            "view_mode": "XYZ",
+            "view_pos": [
+                305.9138488769531,
+                225.3830108642578,
+                0.0
+            ]
+        },
+        {
+            "title": "DocLayNet Dataset",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 3,
+            "view_mode": "XYZ",
+            "view_pos": [
+                74.89080047607422,
+                390.39947509765625,
+                0.0
+            ]
+        },
+        {
+            "title": "Extraction of Ground Truth",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.82066345214844,
+                468.3306579589844,
+                0.0
+            ]
+        },
+        {
+            "title": "Evaluation Procedure",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                305.9138488769531,
+                581.1922607421875,
+                0.0
+            ]
+        },
+        {
+            "title": "Evaluation Metrics",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                74.89080047607422,
+                475.5576171875,
+                0.0
+            ]
+        },
+        {
+            "title": "Tools used",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 7,
+            "view_mode": "XYZ",
+            "view_pos": [
+                74.89080047607422,
+                661.8937377929688,
+                0.0
+            ]
+        },
+        {
+            "title": "Results",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.82066345214844,
+                694.0538330078125,
+                0.0
+            ]
+        },
+        {
+            "title": "For Text Extraction:",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 8,
+            "view_mode": "XYZ",
+            "view_pos": [
+                66.82066345214844,
+                512.415283203125,
+                0.0
+            ]
+        },
+        {
+            "title": "For Table Extraction:",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                313.8635559082031,
+                579.98779296875,
+                0.0
+            ]
+        },
+        {
+            "title": "Discussion",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 9,
+            "view_mode": "XYZ",
+            "view_pos": [
+                313.8635559082031,
+                260.43389892578125,
+                0.0
+            ]
+        },
+        {
+            "title": "Conclusion and Future work",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 11,
+            "view_mode": "XYZ",
+            "view_pos": [
+                74.89080047607422,
+                228.15333557128906,
+                0.0
+            ]
+        }
+    ],
+    "pages": 19,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0,
+        "ocr_engine": "none"
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 4,
+        "equations": {
+            "successful_ocr": 15,
+            "unsuccessful_ocr": 0,
+            "equations": 15
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

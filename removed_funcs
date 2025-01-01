@@ -1,0 +1,131 @@
+function processLines(array) {
+  // Step 1: Create the 2D array with '#' counts and "toUpd" markings.
+  //toIpd ares that start with '1.' or "A." stzle
+  const result = array.map((line) => {
+    const hashCount = (line.match(/^#+/) || [""])[0].length;
+    if (/^\d+\./.test(line) || /^[A-Za-z]+\./.test(line)) {
+      // console.log([line, "toUpd"])
+      return [line, "toUpd"];
+    }
+    // console.log([line, hashCount]);
+    return [line, hashCount];
+  });
+
+  // Step 2: Process each section between `##` lines and also the last segment after the last `##`.
+  let lastDoubleHashIndex = -1; // init index for '##' start of a line aka a heading
+
+  for (let index = 0; index <= result.length; index++) {
+    if (index === result.length || result[index][1] === 2) {
+      // Process the section from ldoubHasInd up to index
+      let firstNumberDot = -1;
+      let firstLetterDot = -1;
+
+      for (let i = lastDoubleHashIndex + 1; i < index; i++) {
+        if (result[i][1] === "toUpd") {
+          if (/^\d+\./.test(result[i][0]) && firstNumberDot === -1) {
+            firstNumberDot = i;
+          } else if (
+            /^[A-Za-z]+\./.test(result[i][0]) &&
+            firstLetterDot === -1
+          ) {
+            firstLetterDot = i;
+          }
+        }
+      }
+
+      // Apply updates based on number-dot or letter-dot
+      for (let i = lastDoubleHashIndex + 1; i < index; i++) {
+        if (result[i][1] === "toUpd") {
+          if (firstNumberDot !== -1 && firstLetterDot !== -1) {
+            if (
+              firstNumberDot < firstLetterDot &&
+              /^\d+\./.test(result[i][0])
+            ) {
+              result[i][0] = "###" + result[i][0];
+            } else if (
+              firstNumberDot < firstLetterDot &&
+              /^[A-Za-z]+\./.test(result[i][0])
+            ) {
+              result[i][0] = "####" + result[i][0];
+            } else if (
+              firstLetterDot < firstNumberDot &&
+              /^[A-Za-z]+\./.test(result[i][0])
+            ) {
+              result[i][0] = "###" + result[i][0];
+            } else if (
+              firstLetterDot < firstNumberDot &&
+              /^\d+\./.test(result[i][0])
+            ) {
+              result[i][0] = "####" + result[i][0];
+            }
+          } else if (
+            firstLetterDot !== -1 &&
+            firstNumberDot === -1 &&
+            /^\d+\./.test(result[i][0])
+          ) {
+            result[i][0] = "###" + result[i][0];
+          } else if (
+            firstLetterDot === -1 &&
+            firstNumberDot !== -1 &&
+            /^\d+\./.test(result[i][0])
+          ) {
+            result[i][0] = "###" + result[i][0];
+          }
+        }
+      }
+
+      // Update the index of the last `##` for the next section
+      lastDoubleHashIndex = index < result.length ? index : -1;
+    }
+  }
+
+  return result.map((row) => row[0]);
+}
+
+//not working properly !!!!
+
+    
+    // regex for number dot such as 1. 15. 12345. etc
+    // const numberDot = /^(\d+)\.\s/;
+    // let listingNumberDot = lines[i].match(numberDot);
+    // if (listingNumberDot) {
+    //   let nextListingNumber = parseInt(listingNumberDot[0].slice(0, -1)) + 1;
+    //   let prevListingNumber = parseInt(listingNumberDot[0].slice(0, -1)) - 1;
+    //   nextListingNumber = nextListingNumber.toString() + ".";
+    //   prevListingNumber = prevListingNumber.toString() + ".";
+    //   for(let k =1;k<10;k++){
+    //     if((i+k<lines.length) && (lines[i + k].startsWith(nextListingNumber))){
+    //       break;
+    //     }
+    //     else if (!lines[i + 1].startsWith(nextListingNumber)) {
+    //     // console.log(lines[i + 1], i, listingNumberDot[0]);
+    //     for (let j = 0; j <= 5; j++) {
+    //       if (lines[i + 1 + j].includes(nextListingNumber)) {
+    //         let substringIndex = lines[i + 1 + j].indexOf(nextListingNumber);
+    //         let newListing = lines[i + j + 1].substring(substringIndex);
+    //         lines[i + 1 + j] = lines[i + 1 + j].substring(0, substringIndex);
+    //         lines[i] = lines[i].substring(0, substringIndex);
+    //         lines.splice(i + j + 2, 0, newListing);
+    //         break;
+    //       }
+    //     }
+    //   }
+    //   }
+    //   for(let m = -1 ;m>-10;m--){
+    //      if(!(i+m<0) && ((lines[i + m].startsWith(nextListingNumber)))){
+    //       break;
+          
+    //     }
+    //          else if (!lines[i - 1].startsWith(prevListingNumber)) {
+    //     for (let j = 0; j <= 5; j++) {
+    //       if (lines[i - 1 - j].includes(prevListingNumber)) {
+    //         let substringIndex2 = lines[i - 1 - j].indexOf(prevListingNumber);
+    //         let newListing2 = lines[i - 1 - j].substring(substringIndex2);
+    //         lines[i - 1 - j] = lines[i - 1 - j].substring(0, substringIndex2);
+    //         lines[i] = lines[i].substring(0, substringIndex2);
+    //         lines.splice(i + j - 2, 0, newListing2);
+    //         break;
+    //       }
+    //     }
+    //   }
+    //   }

@@ -14,7 +14,8 @@ This survey provides an in-depth analysis of knowledge conflicts for large langu
 Large language models (LLMs) (Brown et al.,
 2020; Touvron et al., 2023; Achiam et al., 2024)
 are renowned for encapsulating a vast repository of world knowledge (Petroni et al., 2019; Roberts et al., 2020), referred to as *parametric knowledge*.
-
+- listing element1 - listing 2
+- listing 3
 
 
 ## 2 **Context-Memory Conflict** 2.1 Same Line title
@@ -30,17 +31,21 @@ The core of context-memory conflict stems from a discrepancy between the context
 Misinformation Pollution. Misinformation pollution emerges as another contributor to contextmemory conflict, particularly for time-invariant knowledge (Jang et al., 2021) that the model has accurately learned. Adversaries exploit this vulnerability by introducing false or misleading information into the Web corpus of retrieved documents (Pan et al., 2023a,b; Weller et al., 2022)
 and user conversations (Xu et al., 2023). The latter poses a practical threat, as adversaries can leverage techniques such as *prompt injection* attacks (Liu et al., 2023b; Greshake et al., 2023; Yi et al., 2023). This vulnerability poses a real threat, as models might unknowingly propagate misinformation if they incorporate deceptive inputs without scrutiny (Xie et al., 2023; Pan et al., 2023b; Xu et al., 2023).
 
+* listing 1 * listin2
+* listin 3
+* listin 4
+* listin 5
 
 
 ## 2.3 Analysis Of Model Behaviors
 
 How do LLMs navigate context-memory conflicts?
 
-This section will detail the relevant research, although they present quite different answers. Depending on the scenario, we first introduce the Open-domain question answering (ODQA) setup and then focus on general setups.
+This section will detail the relevant research, although they present quite different answers. Depending on the scenario, we first introduce the Open-domain question answering (ODQA) setup and then focus on general setups. 2.4 Testing Title here for stuff.s
 
 II. What is the conclusion? No definitive rule exists for whether a model prioritizes contextual or parametric knowledge. Yet, knowledge that is *semantically coherent, logical, and compelling* is typically favored by models over generic conflicting information.
 
-## 2.4 Solutions
+## 2.5 Solutions
 
 Solutions are organized according to their **objectives**, *i.e.*, the desired behaviors we expect from an LLM when it encounters conflicts. Existing strategies can be categorized into the following objectives: *Faithful to context* strategies aim to align with contextual knowledge, focusing on context prioritization. *Discriminating misinformation* strategies encourage skepticism towards dubious context in favor of parametric knowledge. *Disentangling sources* strategies treat context and knowledge separately and provide disentangled answers.
 
@@ -92,10 +97,10 @@ Bias in Training Corpora. Recent research demonstrates that the primary phase fo
 Self-Inconsistency. Elazar et al. (2021) develop a method for assessing the knowledge consistency of language models, focusing specifically on knowledge triples. The authors primarily conduct experiments using BERT, RoBERTa, and ALBERT. Li et al. (2023d) explore an additional aspect of inconsistency that LLMs can give an initial answer to a question, but it may subsequently deny the previous answer when asked if it is correct. The authors conduct experiments focusing on Close-Book Question Answering and reveal that Alpaca-30B
 only displays consistency in 50% of cases.
 
-## 4.2.1 Analytics details
+** 4.2.1 Analytics details**
 
 Random stuff for test
 
-## 4.2.1.1 Details Further
+_4.2.1.1 Details Further_
 
 More for test

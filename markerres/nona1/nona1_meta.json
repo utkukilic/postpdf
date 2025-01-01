@@ -1,0 +1,405 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "1 Introduction",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                735.3079833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.1 Motivation",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                221.8979949951172,
+                0.0
+            ]
+        },
+        {
+            "title": "1.2 Problem Statement",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 15,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                735.3079833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.3 Research Objective",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 15,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                613.3189697265625,
+                0.0
+            ]
+        },
+        {
+            "title": "2 Background",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 4,
+            "page_index": 16,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                735.3079833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "2.1 Safety-critical Systems",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 16,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                563.3380126953125,
+                0.0
+            ]
+        },
+        {
+            "title": "2.2 STPA with STAMP and XSTAMPP",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 16,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                307.7239990234375,
+                0.0
+            ]
+        },
+        {
+            "title": "2.3 Agile Testing",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 17,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                490.2590026855469,
+                0.0
+            ]
+        },
+        {
+            "title": "2.4 BDD and JBehave",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 18,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                689.4330444335938,
+                0.0
+            ]
+        },
+        {
+            "title": "3 Related Work",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                735.3079833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.1 FMEA",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                591.7920532226562,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2 Cucumber",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                435.7650146484375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3 BDD Security - Continuum",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                229.94398498535156,
+                0.0
+            ]
+        },
+        {
+            "title": "4 Concept",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 22,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                735.3079833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1 Current Workflow: Writing Automated BDD Acceptance Tests",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 22,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                428.18499755859375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2 Improvements to the BDD Testing Process",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 26,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                376.4460144042969,
+                0.0
+            ]
+        },
+        {
+            "title": "5 Implementation",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 4,
+            "page_index": 32,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                735.3079833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "5.1 Extending XSTAMPP",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 33,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                317.00201416015625,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2 Input File Format",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 34,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                677.3389892578125,
+                0.0
+            ]
+        },
+        {
+            "title": "5.3 Limitations",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 35,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                660.9800415039062,
+                0.0
+            ]
+        },
+        {
+            "title": "5.4 Sample Usage Details",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 35,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                343.4779968261719,
+                0.0
+            ]
+        },
+        {
+            "title": "6 Evaluation",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 4,
+            "page_index": 40,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                735.3079833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.1 EST 2017 Agile Experiment",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 40,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                527.7720336914062,
+                0.0
+            ]
+        },
+        {
+            "title": "6.2 Evaluation",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 40,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                350.4049987792969,
+                0.0
+            ]
+        },
+        {
+            "title": "6.3 Evaluation Results",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 43,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                411.239013671875,
+                0.0
+            ]
+        },
+        {
+            "title": "6.4 Threats to Validity",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 44,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                334.0760192871094,
+                0.0
+            ]
+        },
+        {
+            "title": "7 Conclusion",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 48,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                735.3079833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "7.1 Future Work",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 48,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                307.25799560546875,
+                0.0
+            ]
+        },
+        {
+            "title": "Bibliography",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 50,
+            "view_mode": "XYZ",
+            "view_pos": [
+                85.03900146484375,
+                735.3079833984375,
+                0.0
+            ]
+        }
+    ],
+    "pages": 53,
+    "ocr_stats": {
+        "ocr_pages": 2,
+        "ocr_failed": 0,
+        "ocr_success": 2,
+        "ocr_engine": "surya"
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 14,
+        "equations": {
+            "successful_ocr": 0,
+            "unsuccessful_ocr": 0,
+            "equations": 0
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

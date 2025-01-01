@@ -1,0 +1,1250 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "Preface",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                706.3569946289062,
+                0.0
+            ]
+        },
+        {
+            "title": "Who is this book for?",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                248.48599243164062,
+                0.0
+            ]
+        },
+        {
+            "title": "Using the code",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 5,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                589.3569946289062,
+                0.0
+            ]
+        },
+        {
+            "title": "Sounds and signals",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 8,
+            "page_index": 12,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Periodic signals",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                480.468994140625,
+                0.0
+            ]
+        },
+        {
+            "title": "Spectral decomposition",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                329.58099365234375,
+                0.0
+            ]
+        },
+        {
+            "title": "Signals",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 16,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Reading and writing Waves",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 18,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                642.2200317382812,
+                0.0
+            ]
+        },
+        {
+            "title": "Spectrums",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 18,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                386.1150207519531,
+                0.0
+            ]
+        },
+        {
+            "title": "Wave objects",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 19,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                466.9490051269531,
+                0.0
+            ]
+        },
+        {
+            "title": "Signal objects",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 20,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                617.2210083007812,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 22,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Harmonics",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 5,
+            "page_index": 24,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Triangle waves",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 24,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                319.9750061035156,
+                0.0
+            ]
+        },
+        {
+            "title": "Square waves",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 27,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                478.5690002441406,
+                0.0
+            ]
+        },
+        {
+            "title": "Aliasing",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 28,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                399.7300109863281,
+                0.0
+            ]
+        },
+        {
+            "title": "Computing the spectrum",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 30,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                246.8159942626953,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 32,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                396.76300048828125,
+                0.0
+            ]
+        },
+        {
+            "title": "Non-periodic signals",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 9,
+            "page_index": 34,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Linear chirp",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 34,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                314.9909973144531,
+                0.0
+            ]
+        },
+        {
+            "title": "Exponential chirp",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 36,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                178.7139892578125,
+                0.0
+            ]
+        },
+        {
+            "title": "Spectrum of a chirp",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 37,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                211.38900756835938,
+                0.0
+            ]
+        },
+        {
+            "title": "Spectrogram",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 38,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                299.375,
+                0.0
+            ]
+        },
+        {
+            "title": "The Gabor limit",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 39,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                231.76100158691406,
+                0.0
+            ]
+        },
+        {
+            "title": "Leakage",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 40,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                356.7250061035156,
+                0.0
+            ]
+        },
+        {
+            "title": "Windowing",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 42,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                390.4679870605469,
+                0.0
+            ]
+        },
+        {
+            "title": "Implementing spectrograms",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 43,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                269.2070007324219,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 45,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Noise",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 48,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Uncorrelated noise",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 48,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                234.0489959716797,
+                0.0
+            ]
+        },
+        {
+            "title": "Integrated spectrum",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 51,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                480.2030029296875,
+                0.0
+            ]
+        },
+        {
+            "title": "Brownian noise",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 52,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                431.3999938964844,
+                0.0
+            ]
+        },
+        {
+            "title": "Pink Noise",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 55,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                478.4839782714844,
+                0.0
+            ]
+        },
+        {
+            "title": "Gaussian noise",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 57,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                270.0669860839844,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 58,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                146.8610076904297,
+                0.0
+            ]
+        },
+        {
+            "title": "Autocorrelation",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 7,
+            "page_index": 62,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Correlation",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 62,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                350.36297607421875,
+                0.0
+            ]
+        },
+        {
+            "title": "Serial correlation",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 65,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Autocorrelation",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 66,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                415.3420104980469,
+                0.0
+            ]
+        },
+        {
+            "title": "Autocorrelation of periodic signals",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 67,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                404.45599365234375,
+                0.0
+            ]
+        },
+        {
+            "title": "Correlation as dot product",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 71,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Using NumPy",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 71,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                201.37501525878906,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 73,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Discrete cosine transform",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 8,
+            "page_index": 74,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Synthesis",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 75,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Synthesis with arrays",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 75,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                150.6820068359375,
+                0.0
+            ]
+        },
+        {
+            "title": "Analysis",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 77,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                279.82098388671875,
+                0.0
+            ]
+        },
+        {
+            "title": "Orthogonal matrices",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 78,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                245.58200073242188,
+                0.0
+            ]
+        },
+        {
+            "title": "DCT-IV",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 80,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                466.541015625,
+                0.0
+            ]
+        },
+        {
+            "title": "Inverse DCT",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 82,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                420.6360168457031,
+                0.0
+            ]
+        },
+        {
+            "title": "The Dct class",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 82,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                144.79299926757812,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 84,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Discrete Fourier Transform",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 10,
+            "page_index": 86,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Complex exponentials",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 87,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Complex signals",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 88,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                218.0260009765625,
+                0.0
+            ]
+        },
+        {
+            "title": "The synthesis problem",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 89,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                249.12600708007812,
+                0.0
+            ]
+        },
+        {
+            "title": "Synthesis with matrices",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 91,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                483.52899169921875,
+                0.0
+            ]
+        },
+        {
+            "title": "The analysis problem",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 93,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                536.7260131835938,
+                0.0
+            ]
+        },
+        {
+            "title": "Efficient analysis",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 94,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "DFT",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 95,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "The DFT is periodic",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 96,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                494.1610107421875,
+                0.0
+            ]
+        },
+        {
+            "title": "DFT of real signals",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 97,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                209.83900451660156,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 98,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                151.75799560546875,
+                0.0
+            ]
+        },
+        {
+            "title": "Filtering and Convolution",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 8,
+            "page_index": 100,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Smoothing",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 100,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                363.7860107421875,
+                0.0
+            ]
+        },
+        {
+            "title": "Convolution",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 102,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                161.88400268554688,
+                0.0
+            ]
+        },
+        {
+            "title": "The frequency domain",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 104,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                479.56298828125,
+                0.0
+            ]
+        },
+        {
+            "title": "The convolution theorem",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 105,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                314.6310119628906,
+                0.0
+            ]
+        },
+        {
+            "title": "Gaussian filter",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 106,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                226.37301635742188,
+                0.0
+            ]
+        },
+        {
+            "title": "Efficient convolution",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 108,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                464.00201416015625,
+                0.0
+            ]
+        },
+        {
+            "title": "Efficient autocorrelation",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 109,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                294.5589904785156,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 111,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                536.1920166015625,
+                0.0
+            ]
+        },
+        {
+            "title": "Differentiation and Integration",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 7,
+            "page_index": 112,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Finite differences",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 112,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                319.9750061035156,
+                0.0
+            ]
+        },
+        {
+            "title": "The frequency domain",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 113,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                160.0590057373047,
+                0.0
+            ]
+        },
+        {
+            "title": "Differentiation",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 114,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                258.3879699707031,
+                0.0
+            ]
+        },
+        {
+            "title": "Integration",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 117,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                163.80599975585938,
+                0.0
+            ]
+        },
+        {
+            "title": "Cumulative sum",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 119,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                321.5799865722656,
+                0.0
+            ]
+        },
+        {
+            "title": "Integrating noise",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 122,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                465.9329833984375,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 123,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                656.1719970703125,
+                0.0
+            ]
+        },
+        {
+            "title": "LTI systems",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 124,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Signals and systems",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 124,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                370.27001953125,
+                0.0
+            ]
+        },
+        {
+            "title": "Windows and filters",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 126,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                433.57501220703125,
+                0.0
+            ]
+        },
+        {
+            "title": "Acoustic response",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 127,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                233.44598388671875,
+                0.0
+            ]
+        },
+        {
+            "title": "Systems and convolution",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 130,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                480.177001953125,
+                0.0
+            ]
+        },
+        {
+            "title": "Proof of the Convolution Theorem",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 133,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                493.77801513671875,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 135,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                240.22999572753906,
+                0.0
+            ]
+        },
+        {
+            "title": "Modulation and sampling",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 138,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                703.8670043945312,
+                0.0
+            ]
+        },
+        {
+            "title": "Convolution with impulses",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 138,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                260.58599853515625,
+                0.0
+            ]
+        },
+        {
+            "title": "Amplitude modulation",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 139,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                160.4969940185547,
+                0.0
+            ]
+        },
+        {
+            "title": "Sampling",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 142,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                334.10101318359375,
+                0.0
+            ]
+        },
+        {
+            "title": "Aliasing",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 145,
+            "view_mode": "XYZ",
+            "view_pos": [
+                86.4000015258789,
+                359.6269836425781,
+                0.0
+            ]
+        },
+        {
+            "title": "Interpolation",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 148,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                463.6260070800781,
+                0.0
+            ]
+        },
+        {
+            "title": "Exercises",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 150,
+            "view_mode": "XYZ",
+            "view_pos": [
+                129.60000610351562,
+                641.4370727539062,
+                0.0
+            ]
+        }
+    ],
+    "pages": 153,
+    "ocr_stats": {
+        "ocr_pages": 2,
+        "ocr_failed": 0,
+        "ocr_success": 2,
+        "ocr_engine": "surya"
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 4,
+        "equations": {
+            "successful_ocr": 34,
+            "unsuccessful_ocr": 3,
+            "equations": 37
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

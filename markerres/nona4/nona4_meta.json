@@ -1,0 +1,358 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "A Single Sign-On Infrastructure for Science Gateways on a Use Case for Structural Bioinformatics ",
+            "level": 0,
+            "is_closed": false,
+            "n_kids": 23,
+            "page_index": 0,
+            "view_mode": "FitH",
+            "view_pos": [
+                646.0
+            ]
+        },
+        {
+            "title": "Abstract",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "FitH",
+            "view_pos": [
+                468.0
+            ]
+        },
+        {
+            "title": "Introduction",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 1,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                543.0,
+                547.0,
+                543.0
+            ]
+        },
+        {
+            "title": "Background",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 7,
+            "page_index": 1,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                166.0,
+                547.0,
+                166.0
+            ]
+        },
+        {
+            "title": "Application Domain",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 2,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                639.0,
+                547.0,
+                639.0
+            ]
+        },
+        {
+            "title": "Sensitive Data in Research and Science",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 2,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                492.0,
+                547.0,
+                492.0
+            ]
+        },
+        {
+            "title": "The MoSGrid Infrastructure",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 3,
+            "page_index": 3,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                693.0,
+                547.0,
+                693.0
+            ]
+        },
+        {
+            "title": "gUSE and WS-PGRADE",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 3,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                405.0,
+                547.0,
+                405.0
+            ]
+        },
+        {
+            "title": "XtreemFS",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                693.0,
+                547.0,
+                693.0
+            ]
+        },
+        {
+            "title": "UNICORE",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 4,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                302.0,
+                547.0,
+                302.0
+            ]
+        },
+        {
+            "title": "Related Work",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 5,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                543.0,
+                547.0,
+                543.0
+            ]
+        },
+        {
+            "title": "The MoSGrid Security Infrastructure",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 7,
+            "page_index": 7,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                593.0,
+                547.0,
+                593.0
+            ]
+        },
+        {
+            "title": "User and Credential Management",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 7,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                342.0,
+                547.0,
+                342.0
+            ]
+        },
+        {
+            "title": "Managing Security Tokens with a Certificate Portlet",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 9,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                417.0,
+                547.0,
+                417.0
+            ]
+        },
+        {
+            "title": "Workflow and Job Management",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 1,
+            "page_index": 9,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                229.0,
+                547.0,
+                229.0
+            ]
+        },
+        {
+            "title": "Application Specific Module",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 11,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                380.0,
+                547.0,
+                380.0
+            ]
+        },
+        {
+            "title": "Distributed Data Management",
+            "level": 2,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 13,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                179.0,
+                547.0,
+                179.0
+            ]
+        },
+        {
+            "title": "Integration of XtreemFS in the Science Gateway",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                279.0,
+                547.0,
+                279.0
+            ]
+        },
+        {
+            "title": "Integration of XtreemFS in UNICORE",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                304.0,
+                547.0,
+                304.0
+            ]
+        },
+        {
+            "title": "Domain Specific Workflows",
+            "level": 1,
+            "is_closed": false,
+            "n_kids": 2,
+            "page_index": 14,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                191.0,
+                547.0,
+                191.0
+            ]
+        },
+        {
+            "title": "The Molecular Dynamics Portlet",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 15,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                542.0,
+                547.0,
+                542.0
+            ]
+        },
+        {
+            "title": "The Quantum Chemistry Portlet",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 17,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                693.0,
+                547.0,
+                693.0
+            ]
+        },
+        {
+            "title": "Summary and Outlook",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 19,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                166.0,
+                547.0,
+                166.0
+            ]
+        },
+        {
+            "title": "References",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 20,
+            "view_mode": "FitR",
+            "view_pos": [
+                -1.0,
+                547.0,
+                547.0,
+                547.0
+            ]
+        }
+    ],
+    "pages": 22,
+    "ocr_stats": {
+        "ocr_pages": 2,
+        "ocr_failed": 0,
+        "ocr_success": 2,
+        "ocr_engine": "surya"
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 2,
+        "equations": {
+            "successful_ocr": 0,
+            "unsuccessful_ocr": 0,
+            "equations": 0
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}
